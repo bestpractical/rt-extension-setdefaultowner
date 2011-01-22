@@ -1,0 +1,22 @@
+# -*- perl -*-
+
+@Scrips = (
+    {
+        Description    => 'Set Default Owner', # loc
+        ScripCondition => 'On Create', # loc
+        ScripAction    => 'Set Default Owner', # loc
+        Template       => 'Blank',
+    },
+
+);
+
+@ScripActions = (
+    {
+        Name        => 'Set Default Owner',    # loc
+        Description => 'Set Default Owner',    # loc
+        ExecModule  => 'SetDefaultOwner',
+    }
+
+);
+
+1;

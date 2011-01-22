@@ -1,0 +1,30 @@
+NAME
+    RT::Extension::SetDefaultOwner - set default owner of tickets
+
+DESCRIPTION
+    RT's default owner is nobody, this extension can customize this so you
+    can set another user as the default owner.
+
+INSTALLATION
+
+        perl Makefile.PL
+        make
+        make install
+        make initdb # first time only
+
+    if with RT 3.8+, you will need to add extension to the Plugins:
+        Set( @Plugins, qw(... RT::Extension::SetDefaultOwner) );
+
+    to Set default owner to user named "foo"
+        Set($DefaultOwner, 'foo');
+
+AUTHOR
+    sunnavy "<sunnavy@bestpractical.com>"
+
+LICENCE AND COPYRIGHT
+    RT-Extension-SetDefaultOwner is Copyright 2011 Best Practical Solutions,
+    LLC.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
